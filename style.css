@@ -80,6 +80,7 @@ hr {
   max-width: 350px;
   display: block;
   margin: auto;
+  border-radius: 50%;
 }
 .hero .hero-heading{
     color:var(--gray-color);

@@ -93,6 +93,7 @@ hr {
 /* Section */
 .section{
     padding:2rem;
+    border-radius: 1rem;
 }
 .section h1{
     text-align: center;
@@ -100,6 +101,11 @@ hr {
 .ow{
     background-color: var(--off-white);
 } 
+.lists{
+max-width:50%;
+text-align: center;
+margin: auto;
+}
 /* Footer */
 .footer{
     background-color:var(--primary-color);

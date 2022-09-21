@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap");
 :root {
-  --primary-color: #ffac63;
+  --primary-color-hover: #61832F;
+  --primary-color: #96C232;
   --gray-color:#6B7280;
   --off-white:#d4d4d4;
+  --header-background:#222629;
 }
 body {
   font-family: "Lato", sans-serif;
@@ -16,22 +18,44 @@ hr {
   padding: 1rem;
 }
 .container-center {
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: auto;
+}
+.caseList{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+#welcome{
+  text-align: center;
+  font-size: 3rem;
+  color:var(--primary-color);
+}
+.imgCase{
+  width:25rem
+}
+.content{
+  min-height:100vh;
+  min-width: 100vw;
 }
 /* links */
 .link {
   padding: 0.5rem 1rem;
-  text-decoration: none;
   margin: 1rem;
+  text-decoration: none;
 }
 .link a{
   font-size: 1.5rem;
+  
 }
 .primary-link {
   background-color: var(--primary-color);
   color: white;
   border-radius: 0.5rem;
+}
+.primary-link:hover{
+  background-color: var(--primary-color-hover);
 }
 .secondary-link {
   color: var(--primary-color);
@@ -58,7 +82,12 @@ hr {
   color: whitesmoke;
   padding: 1rem;
   border-bottom-left-radius: 1rem;
+  height: 10vh;
+  position: sticky;
+  top:0;
+  z-index: 1;
 }
+
 .navigation .nav-brand {
   font-weight: bold;
   font-size: 2rem;
@@ -74,13 +103,18 @@ hr {
 
 /* Header */
 .hero {
-  padding: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  /* margin:1rem; */
+  height: 90vh;
+  background: var(--header-background);
 }
 .hero .hero-image {
-  max-width: 350px;
-  display: block;
-  margin: auto;
-  border-radius: 50%;
+  max-width: 400px;
+  border-radius: 7%;
+
 }
 .hero .hero-heading{
     color:var(--gray-color);
@@ -89,6 +123,7 @@ hr {
 }
 .hero .hero-inverted{
     color:var(--primary-color);
+    display: block;
 }
 /* Section */
 .section{
@@ -104,7 +139,7 @@ hr {
 .lists{
 max-width:50%;
 text-align: center;
-margin: auto;
+margin: 1rem auto;
 }
 /* Footer */
 .footer{
@@ -127,4 +162,25 @@ margin: auto;
 /* Hiding Scrollbar */
 ::-webkit-scrollbar{
   display:none;
+}
+ol{
+  display: flex;
+  flex-wrap: wrap;
+}
+.social{
+  font-size: 2rem;
+}
+.hero p{
+  max-width:40%;
+  margin:auto;
+  background-color: white;
+  padding:1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  left:60%;
+}
+.imgProject{
+  display: block;
+  max-width: 30rem;
+  margin: 2rem auto ;
 }
